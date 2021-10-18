@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rpsecommerceapp.MainPage">
+
+    <ContentPage.Resources>
+        <Style TargetType="Image" Class="ImageCss">
+            <Setter Property="HeightRequest" Value="75"></Setter>
+            <Setter Property="WidthRequest" Value="75"></Setter>
+        </Style>
+        <Style TargetType="Label">
+            
+        </Style>
+        <Style TargetType="Entry">
+
+        </Style>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Frame>
+            <Image Source="logo.jpg" StyleClass="ImageCss" ></Image>
+            
+            <Frame.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="Navy" Offset="0.2"></GradientStop>
+                    <GradientStop Color="SkyBlue" Offset="0.4"></GradientStop>
+                    <GradientStop Color="Blue" Offset="0.6"></GradientStop>
+                    <GradientStop Color="yellow" Offset="1.0"></GradientStop>
+                </LinearGradientBrush>    
+            </Frame.Background>
+
+        </Frame>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <BoxView BackgroundColor="Aqua" Grid.Row="0" Grid.Column="0"> </BoxView>
+            <BoxView BackgroundColor="red" Grid.Row="0" Grid.Column="1"></BoxView>
+            <BoxView BackgroundColor="navy" Grid.Row="1" Grid.Column="0"></BoxView>
+            <BoxView BackgroundColor="Violet" Grid.Row="1" Grid.Column="1"></BoxView>
+            <BoxView BackgroundColor="Orange" Grid.Row="2" Grid.Column="0"></BoxView>
+            <BoxView BackgroundColor="brown" Grid.Row="2" Grid.Column="1"></BoxView>
+            <BoxView BackgroundColor="green" Grid.Row="3" Grid.Column="0"></BoxView>
+            <BoxView BackgroundColor="DeepPink" Grid.Row="3" Grid.Column="1"></BoxView>
+        </Grid>
+        
+    </StackLayout>
+
+</ContentPage>
