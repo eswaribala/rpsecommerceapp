@@ -14,9 +14,14 @@
         <Style TargetType="Entry">
 
         </Style>
+
+        <Style TargetType="Button" Class="BtnCss">
+            <Setter Property="BackgroundColor" Value="Navy"></Setter>
+            <Setter Property="TextColor" Value="White"></Setter>
+        </Style>
     </ContentPage.Resources>
 
-    <StackLayout>
+    <StackLayout x:Name="topStack">
         <Frame>
             <Image Source="logo.jpg" StyleClass="ImageCss" ></Image>
              
@@ -31,7 +36,7 @@
 
         </Frame>
      
-        <Grid x:Name="NewArrivalGrid" HorizontalOptions="Center" VerticalOptions="Center">
+        <Grid x:Name="NewArrivalGrid">
             <!--<Grid.RowDefinitions>
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
@@ -53,8 +58,10 @@
             <BoxView BackgroundColor="brown" Grid.Row="2" Grid.Column="1"></BoxView>
             <BoxView BackgroundColor="green" Grid.Row="3" Grid.Column="0"></BoxView>
                 <BoxView BackgroundColor="DeepPink" Grid.Row="3" Grid.Column="1"></BoxView>
-            <Button Text="Product" Grid.Row="0" Grid.Column="0" Clicked="Button_Clicked"></Button>-->
+            -->
         </Grid>
+      
+
         <!--<RelativeLayout>
             <BoxView 
         x:Name="boxView"
@@ -107,8 +114,8 @@
                 ElementName=boxView,
                 Property=Y,
                 Constant=0}" />
-        </RelativeLayout>
-
+        </RelativeLayout>-->
+<!--
         <AbsoluteLayout>
             <BoxView 
                 BackgroundColor="Red" 
