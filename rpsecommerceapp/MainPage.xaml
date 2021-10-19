@@ -19,7 +19,7 @@
     <StackLayout>
         <Frame>
             <Image Source="logo.jpg" StyleClass="ImageCss" ></Image>
-            
+             
             <Frame.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
                     <GradientStop Color="Navy" Offset="0.2"></GradientStop>
@@ -30,8 +30,9 @@
             </Frame.Background>
 
         </Frame>
-        <Grid>
-            <Grid.RowDefinitions>
+     
+        <Grid x:Name="NewArrivalGrid" HorizontalOptions="Center" VerticalOptions="Center">
+            <!--<Grid.RowDefinitions>
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
@@ -41,16 +42,103 @@
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <BoxView BackgroundColor="Aqua" Grid.Row="0" Grid.Column="0"> </BoxView>
+            <BoxView BackgroundColor="Aqua" Grid.Row="0" Grid.Column="0">             
+                    
+                
+            </BoxView>
             <BoxView BackgroundColor="red" Grid.Row="0" Grid.Column="1"></BoxView>
             <BoxView BackgroundColor="navy" Grid.Row="1" Grid.Column="0"></BoxView>
             <BoxView BackgroundColor="Violet" Grid.Row="1" Grid.Column="1"></BoxView>
             <BoxView BackgroundColor="Orange" Grid.Row="2" Grid.Column="0"></BoxView>
             <BoxView BackgroundColor="brown" Grid.Row="2" Grid.Column="1"></BoxView>
             <BoxView BackgroundColor="green" Grid.Row="3" Grid.Column="0"></BoxView>
-            <BoxView BackgroundColor="DeepPink" Grid.Row="3" Grid.Column="1"></BoxView>
+                <BoxView BackgroundColor="DeepPink" Grid.Row="3" Grid.Column="1"></BoxView>
+            <Button Text="Product" Grid.Row="0" Grid.Column="0" Clicked="Button_Clicked"></Button>-->
         </Grid>
-        
-    </StackLayout>
+        <!--<RelativeLayout>
+            <BoxView 
+        x:Name="boxView"
+        Color="Green" 
+        WidthRequest="50" 
+        HeightRequest="50" 
+        RelativeLayout.XConstraint=
+            "{ConstraintExpression 
+                Type=RelativeToParent,
+                Property=Width,
+                Factor=0.5,
+                Constant=-25}"
+        RelativeLayout.YConstraint=
+            "{ConstraintExpression 
+                Type=RelativeToParent,
+                Property=Height,
+                Factor=0.5,
+                Constant=-25}"/>
+            <BoxView 
+        x:Name="boxView2"
+        WidthRequest="50" 
+        HeightRequest="50" 
+        Color="Fuchsia" 
+        RelativeLayout.XConstraint=
+            "{ConstraintExpression 
+                ElementName=boxView,
+                Type=RelativeToView,
+                Constant=-100,
+                Property=X}" 
+        RelativeLayout.YConstraint=
+            "{ConstraintExpression 
+                Type=RelativeToView,
+                ElementName=boxView,
+                Property=Y,
+                Constant=0}" />
+            <BoxView 
+        x:Name="boxView3"
+        WidthRequest="50" 
+        HeightRequest="50" 
+        Color="Blue" 
+        RelativeLayout.XConstraint=
+            "{ConstraintExpression 
+                ElementName=boxView,
+                Type=RelativeToView,
+                Constant=100,
+                Property=X}" 
+        RelativeLayout.YConstraint=
+            "{ConstraintExpression 
+                Type=RelativeToView,
+                ElementName=boxView,
+                Property=Y,
+                Constant=0}" />
+        </RelativeLayout>
 
+        <AbsoluteLayout>
+            <BoxView 
+                BackgroundColor="Red" 
+                WidthRequest="50" 
+                HeightRequest="50" />
+            <BoxView 
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="1,0"
+                BackgroundColor="Green" 
+                WidthRequest="50" 
+                HeightRequest="50" />
+            <BoxView 
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0,1"
+                BackgroundColor="Purple" 
+                WidthRequest="50" 
+                HeightRequest="50" />
+            <BoxView 
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="1,1"
+                BackgroundColor="Aqua" 
+                WidthRequest="50" 
+                HeightRequest="50" />
+            <BoxView 
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5,0.5"
+                BackgroundColor="Navy" 
+                WidthRequest="50" 
+                HeightRequest="50" />
+        </AbsoluteLayout>-->
+    </StackLayout>
+    
 </ContentPage>
