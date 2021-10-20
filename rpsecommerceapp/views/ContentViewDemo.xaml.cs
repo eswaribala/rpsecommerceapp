@@ -113,14 +113,39 @@ On May 16, 2011, Miguel de Icaza announced on his blog
              VerticalOptions=LayoutOptions.Center,
              TranslationX=100,
              TranslationY=100,
-             RotationY=45,
+             RotationX=45,
              ScaleX=1,
              ScaleY=1,
                Margin=new Thickness(10),
                HasShadow=true
             
             };
-            ContentStack.Children.Add(frame); 
+            //ContentStack.Children.Add(frame); 
+
+            Label label1 = new Label
+            {
+                Text = "Review",
+                 TextColor = Color.Green,
+                FontAttributes = FontAttributes.Bold
+
+            };
+            Label label2= new Label
+            {
+                Text = "Star Rating",
+                TextColor=Color.Navy,
+                FontAttributes=FontAttributes.Bold
+            };
+            Label label3 = new Label
+            {
+                Text = "Website Url",
+                 TextColor = Color.Red,
+                FontAttributes = FontAttributes.Bold
+            };
+            ContentStack.JustifyContent = FlexJustify.SpaceEvenly;
+            //ContentStack.AlignItems = FlexAlignItems.Stretch;
+            ContentStack.Children.Add(label1);
+            ContentStack.Children.Add(label2);
+            ContentStack.Children.Add(label3);
 
         }
     }
