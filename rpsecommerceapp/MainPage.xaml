@@ -115,36 +115,119 @@
                 Property=Y,
                 Constant=0}" />
         </RelativeLayout>-->
-<!--
+
+        <!--<AbsoluteLayout>
+                <BoxView 
+                    Color="White" 
+                    AbsoluteLayout.LayoutBounds="0, 0, 100, 100"
+                />
+
+                <Button 
+                    BackgroundColor="#008080"  
+                    AbsoluteLayout.LayoutBounds="0, 0, 300, 150" Text="x=0, y=0"
+                />
+
+                <Button 
+                    BackgroundColor="#184757"  
+                    AbsoluteLayout.LayoutBounds="295, 0, 300, 150" Text="x=295, y=0"
+                />
+
+                <Button 
+                    BackgroundColor="#184757"  
+                    AbsoluteLayout.LayoutBounds="0, 182, 300, 150" Text="x=0, y=182"
+                />
+
+                <Button
+                    BackgroundColor="#008080"  
+                    AbsoluteLayout.LayoutBounds="295, 182, 300, 150" Text="x=295, y=182"
+                />
+
+                <Button 
+                    BackgroundColor="YellowGreen"  
+                    AbsoluteLayout.LayoutBounds="150, 92, 300, 150" Text="x=150, y=92"
+                />
+
+                <Button 
+                    BackgroundColor="Orange"  
+                    AbsoluteLayout.LayoutBounds="115, 130, 80, 70" Text="x=115, y=130"
+                />
+
+                <Button 
+                    BackgroundColor="Orange"  
+                    AbsoluteLayout.LayoutBounds="400, 130, 80, 70" Text="x=400, y=130"
+                />
+
+                <Button 
+                    BackgroundColor="Orange"
+                    AbsoluteLayout.LayoutBounds="255, 50, 80, 70" Text="x=255, y=50"
+                />
+
+                <Button 
+                    BackgroundColor="Orange"
+                    AbsoluteLayout.LayoutBounds="255, 210, 80, 70" Text="x=255, y=210"
+                />
+
+            </AbsoluteLayout>
         <AbsoluteLayout>
             <BoxView 
-                BackgroundColor="Red" 
-                WidthRequest="50" 
-                HeightRequest="50" />
-            <BoxView 
-                AbsoluteLayout.LayoutFlags="PositionProportional"
-                AbsoluteLayout.LayoutBounds="1,0"
-                BackgroundColor="Green" 
-                WidthRequest="50" 
-                HeightRequest="50" />
-            <BoxView 
-                AbsoluteLayout.LayoutFlags="PositionProportional"
-                AbsoluteLayout.LayoutBounds="0,1"
-                BackgroundColor="Purple" 
-                WidthRequest="50" 
-                HeightRequest="50" />
-            <BoxView 
-                AbsoluteLayout.LayoutFlags="PositionProportional"
-                AbsoluteLayout.LayoutBounds="1,1"
-                BackgroundColor="Aqua" 
-                WidthRequest="50" 
-                HeightRequest="50" />
-            <BoxView 
-                AbsoluteLayout.LayoutFlags="PositionProportional"
-                AbsoluteLayout.LayoutBounds="0.5,0.5"
-                BackgroundColor="Navy" 
-                WidthRequest="50" 
-                HeightRequest="50" />
+                Color="White" 
+                AbsoluteLayout.LayoutFlags="All" 
+                AbsoluteLayout.LayoutBounds="0, 0, 100, 100"
+            />
+
+            <Button 
+                BackgroundColor="#008080"  
+                AbsoluteLayout.LayoutFlags="All" 
+                AbsoluteLayout.LayoutBounds="0, 0, .48, .45" Text="x=0, y=0"
+            />
+
+            <Button 
+                BackgroundColor="#184757"  
+                AbsoluteLayout.LayoutFlags="All" 
+                AbsoluteLayout.LayoutBounds=".99, 0, .48, .45" Text="x=.99, y=0"
+            />
+
+            <Button
+                BackgroundColor="#184757"  
+                AbsoluteLayout.LayoutFlags="All" 
+                AbsoluteLayout.LayoutBounds="0, .99, .48, .45" Text="x=0, y=.99"
+            />
+
+            <Button 
+                BackgroundColor="#008080"  
+                AbsoluteLayout.LayoutFlags="All" 
+                AbsoluteLayout.LayoutBounds=".99, .99, .48, .45" Text="x=.99, y=.99"
+            />
+
+            <Button 
+                BackgroundColor="YellowGreen"  
+                AbsoluteLayout.LayoutFlags="All" 
+                AbsoluteLayout.LayoutBounds=".50, .50, .48, .45" Text="x=.50, y=.50"
+            />
+
+            <Button 
+                BackgroundColor="Orange"  
+                AbsoluteLayout.LayoutFlags="All" 
+                AbsoluteLayout.LayoutBounds=".20, .50, .18, .18" Text="x=.20, y=.50"
+            />
+
+            <Button 
+                BackgroundColor="Orange"  
+                AbsoluteLayout.LayoutFlags="All" 
+                AbsoluteLayout.LayoutBounds=".80, .50, .18, .18" Text="x=.80, y=.50"
+            />
+
+            <Button 
+                BackgroundColor="Orange"  
+                AbsoluteLayout.LayoutFlags="All" 
+                AbsoluteLayout.LayoutBounds=".50, .20, .18, .18" Text="x=.50, y=.20"
+            />
+
+            <Button 
+                BackgroundColor="Orange"  
+                AbsoluteLayout.LayoutFlags="All" 
+                AbsoluteLayout.LayoutBounds=".50, .80, .18, .18" Text="x=.50, y=.80"
+            />
         </AbsoluteLayout>-->
     </StackLayout>
     

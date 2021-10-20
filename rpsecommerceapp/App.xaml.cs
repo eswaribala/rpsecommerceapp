@@ -1,4 +1,5 @@
-﻿using System;
+﻿using rpsecommerceapp.views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,9 +11,8 @@ namespace rpsecommerceapp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new GalleryPage());
         }
-
         protected override void OnStart()
         {
         }

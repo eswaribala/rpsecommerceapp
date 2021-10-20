@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rpsecommerceapp.views.GalleryPage">
+    <ContentPage.Content>
+       
+        <StackLayout x:Name="GalleryStack" BackgroundColor="Navy">
+            <!--<AbsoluteLayout>
+            
+
+                <Button 
+                BackgroundColor="#008080"  
+                AbsoluteLayout.LayoutFlags="All" 
+                AbsoluteLayout.LayoutBounds="0, 0, .48, .45" Text="x=0, y=0"
+            />
+
+                <Button 
+                BackgroundColor="#184757"  
+                AbsoluteLayout.LayoutFlags="All" 
+                AbsoluteLayout.LayoutBounds=".99, 0, .48, .45" Text="x=.99, y=0"
+            />
+
+                <Button
+                BackgroundColor="#184757"  
+                AbsoluteLayout.LayoutFlags="All" 
+                AbsoluteLayout.LayoutBounds="0, .99, .48, .45" Text="x=0, y=.99"
+            />
+
+                <Button 
+                BackgroundColor="#008080"  
+                AbsoluteLayout.LayoutFlags="All" 
+                AbsoluteLayout.LayoutBounds=".99, .99, .48, .45" Text="x=.99, y=.99"
+            />
+
+                <Button 
+                BackgroundColor="YellowGreen"  
+                AbsoluteLayout.LayoutFlags="All" 
+                AbsoluteLayout.LayoutBounds=".50, .50, .48, .45" Text="x=.50, y=.50"
+            />
+
+                <Button 
+                BackgroundColor="Orange"  
+                AbsoluteLayout.LayoutFlags="All" 
+                AbsoluteLayout.LayoutBounds=".20, .50, .18, .18" Text="x=.20, y=.50"
+            />
+
+                <Button 
+                BackgroundColor="Orange"  
+                AbsoluteLayout.LayoutFlags="All" 
+                AbsoluteLayout.LayoutBounds=".80, .50, .18, .18" Text="x=.80, y=.50"
+            />
+
+                <Button 
+                BackgroundColor="Orange"  
+                AbsoluteLayout.LayoutFlags="All" 
+                AbsoluteLayout.LayoutBounds=".50, .20, .18, .18" Text="x=.50, y=.20"
+            />
+
+                <Button 
+                BackgroundColor="Orange"  
+                AbsoluteLayout.LayoutFlags="All" 
+                AbsoluteLayout.LayoutBounds=".50, .80, .18, .18" Text="x=.50, y=.80"
+            />
+            </AbsoluteLayout>-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

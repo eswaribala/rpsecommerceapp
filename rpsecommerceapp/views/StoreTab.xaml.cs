@@ -18,7 +18,7 @@ namespace rpsecommerceapp.views
             Label ProductLabel1 = new Label
             {
                 Text = "Robotic Vaccum Cleaner",
-                FontSize = 40,
+                FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
                 FontAttributes = FontAttributes.Bold,
                 //HorizontalTextAlignment = TextAlignment.Center
             };
