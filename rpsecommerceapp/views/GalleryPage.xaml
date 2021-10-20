@@ -6,7 +6,7 @@
        
         <StackLayout x:Name="GalleryStack" BackgroundColor="Navy">
             <!--<AbsoluteLayout>
-            
+
 
                 <Button 
                 BackgroundColor="#008080"  
