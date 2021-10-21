@@ -40,7 +40,7 @@ namespace rpsecommerceapp.views
                Constraint.RelativeToView(ProductLabel1, (parent, sibling) => {
                    return sibling.Height / 2;
                }));
-            ProductGallery.Content = ProductRealativeLayout;
+            //ProductGallery.Content = ProductRealativeLayout;
             Label CartLabel = new Label
             {
                 Text = "My Cart",
@@ -72,6 +72,27 @@ namespace rpsecommerceapp.views
                 }));
 
             Orders.Content = OrderRealativeLayout;
+
+            Button button = new Button
+            {
+                Text = "Close",
+                TextColor=Color.White,
+                BackgroundColor=Color.Blue,
+                WidthRequest=150,
+                HeightRequest=50
+                
+            };
+            button.Clicked += async delegate
+            {
+                await Navigation.PopModalAsync();
+            };
+            ProductRealativeLayout.Children.Add(button,
+               Constraint.Constant(0),
+               Constraint.RelativeToView(ProductLabel2, (parent, sibling) => {
+                   return sibling.Height+30;
+               }));
+            ProductGallery.Content = ProductRealativeLayout;
+
         }
     }
 }

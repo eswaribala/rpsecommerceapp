@@ -18,11 +18,11 @@ namespace rpsecommerceapp.views
         }
         async private void AddToolbarItem_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new StoreTab());
+            await Navigation.PushModalAsync(new StoreTab());
         }
         async private void EditToolbarItem_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new GalleryPage());
+            await Navigation.PushModalAsync(new GalleryPage());
         }
     }
 }
