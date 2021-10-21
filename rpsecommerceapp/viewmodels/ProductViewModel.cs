@@ -10,7 +10,7 @@ namespace rpsecommerceapp.viewmodels
     public class ProductViewModel
     {
         private ObservableCollection<Product> _products;
-
+  
         public ProductViewModel()
         {
             _products = new ObservableCollection<Product>();
@@ -44,6 +44,15 @@ namespace rpsecommerceapp.viewmodels
             });
            
 
+        }
+
+
+        ObservableCollection<Product> Products
+        {
+            get
+            {
+                return _products;
+            }
         }
 
     }
