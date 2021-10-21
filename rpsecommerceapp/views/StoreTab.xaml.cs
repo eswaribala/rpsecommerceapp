@@ -73,20 +73,18 @@ namespace rpsecommerceapp.views
 
             Orders.Content = OrderRealativeLayout;
 
-            Button button = new Button
+            ImageButton imageButton = new ImageButton
             {
-                Text = "Close",
-                TextColor=Color.White,
-                BackgroundColor=Color.Blue,
-                WidthRequest=150,
+                Source="close.jpg",
+                WidthRequest=50,
                 HeightRequest=50
                 
             };
-            button.Clicked += async delegate
+            imageButton.Clicked += async delegate
             {
                 await Navigation.PopModalAsync();
             };
-            ProductRealativeLayout.Children.Add(button,
+            ProductRealativeLayout.Children.Add(imageButton,
                Constraint.Constant(0),
                Constraint.RelativeToView(ProductLabel2, (parent, sibling) => {
                    return sibling.Height+30;
