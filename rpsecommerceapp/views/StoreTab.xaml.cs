@@ -29,6 +29,17 @@ namespace rpsecommerceapp.views
                 FontAttributes = FontAttributes.Bold,
                 //HorizontalTextAlignment = TextAlignment.Center
             };
+            ImageButton imageButton = new ImageButton
+            {
+                Source = "close.jpg",
+                WidthRequest = 50,
+                HeightRequest = 50
+
+            };
+            imageButton.Clicked += async delegate
+            {
+                await Navigation.PopModalAsync();
+            };
             var ProductRealativeLayout = new RelativeLayout();
             ProductRealativeLayout.Children.Add(ProductLabel1, Constraint.Constant(50),
                 Constraint.RelativeToParent((parent) =>
@@ -40,7 +51,14 @@ namespace rpsecommerceapp.views
                Constraint.RelativeToView(ProductLabel1, (parent, sibling) => {
                    return sibling.Height / 2;
                }));
-            //ProductGallery.Content = ProductRealativeLayout;
+            
+            ProductRealativeLayout.Children.Add(imageButton,
+               Constraint.Constant(0),
+               Constraint.RelativeToView(ProductLabel2, (parent, sibling) => {
+                   return sibling.Height + 30;
+               }));
+            ProductGallery.Content = ProductRealativeLayout;
+
             Label CartLabel = new Label
             {
                 Text = "My Cart",
@@ -73,24 +91,7 @@ namespace rpsecommerceapp.views
 
             Orders.Content = OrderRealativeLayout;
 
-            ImageButton imageButton = new ImageButton
-            {
-                Source="close.jpg",
-                WidthRequest=50,
-                HeightRequest=50
-                
-            };
-            imageButton.Clicked += async delegate
-            {
-                await Navigation.PopModalAsync();
-            };
-            ProductRealativeLayout.Children.Add(imageButton,
-               Constraint.Constant(0),
-               Constraint.RelativeToView(ProductLabel2, (parent, sibling) => {
-                   return sibling.Height+30;
-               }));
-            ProductGallery.Content = ProductRealativeLayout;
-
+           
         }
     }
 }
