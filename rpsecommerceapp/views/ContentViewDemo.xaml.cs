@@ -143,10 +143,13 @@ On May 16, 2011, Miguel de Icaza announced on his blog
             };
             ContentStack.JustifyContent = FlexJustify.SpaceEvenly;
             //ContentStack.AlignItems = FlexAlignItems.Stretch;
+            ContentStack.Direction = FlexDirection.ColumnReverse;
             ContentStack.Children.Add(label1);
             ContentStack.Children.Add(label2);
             ContentStack.Children.Add(label3);
 
         }
+
+        
     }
 }
