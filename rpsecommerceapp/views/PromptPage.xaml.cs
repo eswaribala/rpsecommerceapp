@@ -15,6 +15,19 @@ namespace rpsecommerceapp.views
         public PromptPage()
         {
             InitializeComponent();
+            Button PromptButton = new Button
+            {
+                Text = "Enter Data"
+            };
+            PromptButton.Clicked += async delegate
+             {
+                 await DisplayPromptAsync("Customer Data",
+                     "Will you place Order", "OK",
+                     "Cancel", keyboard:Keyboard.Text);
+ 
+             };
+
+            PromptStack.Children.Add(PromptButton);
         }
     }
 }

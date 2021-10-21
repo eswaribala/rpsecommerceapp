@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,7 +22,7 @@ namespace rpsecommerceapp.views
                 Text = "Simple Action Sheet"
             };
 
-            Button YesNoActionSheet = new Button
+            Button DecisionActionSheet = new Button
             {
                 Text = "Yes No Action Sheet"
             };
@@ -31,14 +32,18 @@ namespace rpsecommerceapp.views
                   await DisplayActionSheet("Offers", "Share", null, 
                       "Analog Watches", "Jewellery", "Garments");
               };
-            YesNoActionSheet.Clicked += async delegate
+            DecisionActionSheet.Clicked += async delegate
               {
-                  var action = await DisplayActionSheet("Offers", "Share", 
-                      "View", "Analog Watches", "Jewellery", "Garments");
-  
+                  var action = await DisplayActionSheet("Offers", "Yes", 
+                      "No", "Analog Watches", "Jewellery", "Garments");
+                  Debug.WriteLine(action);
+                  if (action.Equals("View"))
+                  {
+
+                  }
               };
             ActionSheetStack.Children.Add(SimpleActionSheet);
-            ActionSheetStack.Children.Add(YesNoActionSheet);
+            ActionSheetStack.Children.Add(DecisionActionSheet);
         }
     }
 }
