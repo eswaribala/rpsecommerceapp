@@ -19,7 +19,10 @@ namespace rpsecommerceapp.views
             Button SimpleButton = new Button
             {
                 Text = "Simple Alert",
-                TextColor=Color.White
+                TextColor = Color.White,
+                BackgroundColor = Color.Violet,
+                FontAttributes = FontAttributes.Bold,
+                Margin = new Thickness(20, 10,20, 10)
             };
             SimpleButton.Clicked += async delegate
              {
@@ -27,7 +30,11 @@ namespace rpsecommerceapp.views
              };
             Button DecisionButton = new Button
             {
-                Text = "Decision Alert"
+                Text = "Decision Alert",
+                TextColor = Color.White,
+                BackgroundColor = Color.Violet,
+                FontAttributes = FontAttributes.Bold,
+                Margin = new Thickness(20, 10, 20, 10)
             };
 
             DecisionButton.Clicked += async delegate
