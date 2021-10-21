@@ -16,9 +16,13 @@ namespace rpsecommerceapp.views
         {
             InitializeComponent();
         }
-        async private void ToolbarItem_Clicked(object sender, EventArgs e)
+        async private void AddToolbarItem_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new StoreTab());
+        }
+        async private void EditToolbarItem_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new GalleryPage());
         }
     }
 }
