@@ -19,21 +19,53 @@
                                BorderColor="DarkGray"
                                CornerRadius="5"
                                Margin="20"
-                               HeightRequest="200"
+                               WidthRequest="300"
+                               HeightRequest="300"
                                HorizontalOptions="Center"
                                VerticalOptions="CenterAndExpand">
                             <StackLayout>
+                                <FlexLayout HorizontalOptions="CenterAndExpand">
+                                    <Label Text="Product Name" 
+                                       FontAttributes="Bold"
+                                       FontSize="Medium"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center" TextColor="OrangeRed" />
                                 <Label Text="{Binding Name}" 
                                        FontAttributes="Bold"
-                                       FontSize="Large"
+                                       FontSize="Medium"
                                        HorizontalOptions="Center"
                                        VerticalOptions="Center" TextColor="Navy" />
+                                </FlexLayout>
+                                <FlexLayout HorizontalOptions="CenterAndExpand">
+                                    <Label Text="Price" 
+                                       FontAttributes="Bold"
+                                       FontSize="Medium"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center" TextColor="OrangeRed" />
+                                    <Label Text="{Binding Price}" 
+                                       FontAttributes="Bold"
+                                       FontSize="Medium"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center" TextColor="Navy" />
+                                    </FlexLayout>
+                                <FlexLayout HorizontalOptions="CenterAndExpand">
+                                    <Label Text="Available Qty" 
+                                       FontAttributes="Bold"
+                                       FontSize="Medium"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center" TextColor="OrangeRed" />
+                                    <Label Text="{Binding AvailableQty}" 
+                                       FontAttributes="Bold"
+                                       FontSize="Medium"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center" TextColor="Navy" />
+                                   
+                                </FlexLayout>
                                 <Image Source="{Binding Photo}" 
                                        Aspect="AspectFill"
                                        HeightRequest="150"
                                        WidthRequest="150"
                                        HorizontalOptions="Center" />
-                              
                             </StackLayout>
                         </Frame>
                     </StackLayout>

@@ -10,5 +10,10 @@ namespace rpsecommerceapp.models
         public string Name { get; set; }
       
         public string Photo { get; set; }
+
+        public long Price { get; set; }
+
+        public int AvailableQty { get; set; }
+
     }
 }
