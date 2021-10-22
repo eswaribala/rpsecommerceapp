@@ -4,6 +4,7 @@ using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
+using Xamarin.Forms;
 
 namespace rpsecommerceapp.Droid
 {
@@ -14,6 +15,9 @@ namespace rpsecommerceapp.Droid
         {
             base.OnCreate(savedInstanceState);
 
+
+
+            
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());

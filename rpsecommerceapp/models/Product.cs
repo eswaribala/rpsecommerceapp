@@ -8,8 +8,7 @@ namespace rpsecommerceapp.models
     {
         public int ProductId { get; set; }
         public string Name { get; set; }
-        public decimal Price { get; set; }
-        public DateTime PurchaseDate { get; set; }
+      
         public string Photo { get; set; }
     }
 }

@@ -2,58 +2,88 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Text;
 
 namespace rpsecommerceapp.viewmodels
 {
     
-    public class ProductViewModel
+    public class ProductViewModel : INotifyPropertyChanged
     {
-        private ObservableCollection<Product> _products;
-  
+        public event PropertyChangedEventHandler PropertyChanged;
+        private ObservableCollection<Product> _Products;
+        private string _Name,_Photo;    
         public ProductViewModel()
         {
-            _products = new ObservableCollection<Product>();
-            _products.Add(new Product
+            _Products = new ObservableCollection<Product>();
+            _Products.Add(new Product
             {
                 ProductId = 1,
                 Name = "TV",
                 Photo = "tv.jpg",
-                Price = 45000
+            
             });
-            _products.Add(new Product
+            _Products.Add(new Product
             {
                 ProductId = 2,
                 Name = "Smart Watch",
                 Photo = "smartwatch.jpg",
-                Price = 25000
+                
             });
-            _products.Add(new Product
+            _Products.Add(new Product
             {
                 ProductId = 3,
                 Name = "Washing Machine",
                 Photo = "washingmachine.jpg",
-                Price = 65000
+              
             });
-            _products.Add(new Product
+            _Products.Add(new Product
             {
                 ProductId = 4,
                 Name = "Mobile",
                 Photo = "mobile.jpg",
-                Price = 25000
+             
             });
            
 
         }
 
 
-        ObservableCollection<Product> Products
+        public ObservableCollection<Product> Products
         {
             get
             {
-                return _products;
+                return _Products;
+            }
+            set
+            {
+                if (_Products != value)
+                {
+                    _Products = value;
+                    OnPropertyChanged(new PropertyChangedEventArgs("Products"));
+                }
             }
         }
 
+        public string Name
+        {
+            get { return _Name; }
+            set {  _Name = value;
+                OnPropertyChanged(new PropertyChangedEventArgs("Name"));
+                    }
+        }
+        public string Photo
+        {
+            get { return _Photo; }
+            set
+            {
+                _Photo = value;
+                OnPropertyChanged(new PropertyChangedEventArgs("Photo"));
+            }
+        }
+        private void OnPropertyChanged(PropertyChangedEventArgs eventArgs)
+        {
+            PropertyChanged?.Invoke(this, eventArgs);
+        }
     }
 }

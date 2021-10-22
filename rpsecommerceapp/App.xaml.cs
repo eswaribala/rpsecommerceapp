@@ -11,7 +11,7 @@ namespace rpsecommerceapp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new PopupDemoPage());
+            MainPage = new NavigationPage(new CaruoselDemoPage());
         }
         protected override void OnStart()
         {

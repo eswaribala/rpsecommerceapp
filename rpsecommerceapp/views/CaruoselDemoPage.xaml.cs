@@ -13,11 +13,13 @@ namespace rpsecommerceapp.views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CaruoselDemoPage : ContentPage
     {
+
         public CaruoselDemoPage()
         {
             InitializeComponent();
-            var vm = new ProductViewModel();
-            this.BindingContext = vm;
+            var vm=new ProductViewModel();
+
+            this.BindingContext = vm;    
         }
     }
 }

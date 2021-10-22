@@ -22,7 +22,7 @@ namespace rpsecommerceapp.views
         }
         async private void EditToolbarItem_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new GalleryPage());
+            await Navigation.PushModalAsync(new CarouselPage());
         }
     }
 }
